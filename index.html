@@ -26,7 +26,7 @@
 
 <p>Gomoku is an abstract strategy board game. Also called Gobang or Five in a Row, it is traditionally played with Go pieces (black and white stones) on a go board with 19x19 (15x15) intersections. This game is known in several countries under different names. Black plays first if white just lost in the last game, and players alternate in placing a stone of their color on an empty intersection. The winner is the first player to get an unbroken row of five stones horizontally, vertically, or diagonally.</p>
 
-<p><img src="https://drive.google.com/file/d/0Bz9F7OxNRzz6Sm00YnlqaF9xNVU/view?usp=sharing" alt="Figure 1"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/13232623/15797443/ec83111c-29dd-11e6-9e4c-7e7ffc0fd4f7.jpg" alt="intro349final"></p>
 
 <p><strong>Figure 1: Example of Gomoku</strong></p>
 
@@ -37,7 +37,7 @@
 
 <p>Before our implementing any machine learning techniques to train a computer to play Gomoku, we need to create an interface which would allow us to simulate a game of Gomoku. This game involves two kinds of chess, player, AI, rules and so on. We implement game class, AI class, player class, gomoku class with Python by ourselves, without using any existing package. </p>
 
-<p>In the game interface part, we made a very useful and interactive design. Firstly, users can choose to play with the AI which is trained before or to play with another player. The first mode allows the AI to play with itself before to train the model and the second mode tends to enhance the interactive function which allow users to play Gomoku with friends. Then, users can set their specific Gomoku rules, including the size of the chess board (from 3<em>3 to 10</em>10) and the number of chess to win (more than 2). This kind of design is to increase the interest of this game and to show that different rules won’t change the basic algorithm since they have the same mechanism.</p>
+<p>In the game interface part, we made a very useful and interactive design. Firstly, users can choose to play with the AI which is trained before or to play with another player. The first mode allows the AI to play with itself before to train the model and the second mode tends to enhance the interactive function which allows users to play Gomoku with friends. Then, users can set their specific Gomoku rules, including the size of the chess board (from 3<em>3 to 10</em>10) and the number of chess to win (more than 2). This kind of design is to increase the interest of this game and to show that different rules won’t change the basic algorithm since they have the same mechanism.</p>
 
 <p>In the game process part, we built up a “dealer” system as the original AI, with which users can play when they don’t want to train a better and clever AI. There are three kinds of strategies: attack, defend and neutral. There is a grading system to help AI make decision which kind of strategy it will take in the next step. This system is based on judging the situation, the grades of AI and player and which kind of strategy leads to a higher score.</p>
 
@@ -52,11 +52,11 @@
 
 <p>The results of accuracy are attached below. From the results, we can find out the AI model develops fast in about first 3000 rounds and then it is much more stable after 3000 rounds and its accuracy is about 96.3% after 10000 rounds. The detailed result is stored in our “result_gomoku.csv” document.</p>
 
-<p><img src="http://imgur.com/OQCN2Z9" alt="Figure 2"></p>
+<p><img width="612" alt="screen shot 2016-06-03 at 22 50 59" src="https://cloud.githubusercontent.com/assets/13232623/15797434/b742478e-29dd-11e6-84bc-ee4b95072889.png"></p>
 
 <p><strong>Figure 2: Win percentage distribution with maximum 3000 rounds</strong></p>
 
-<p><img src="http://imgur.com/sA91zCe" alt="Figure 3"></p>
+<p><img width="608" alt="screen shot 2016-06-03 at 22 51 16" src="https://cloud.githubusercontent.com/assets/13232623/15797438/d03d021a-29dd-11e6-94a8-9f5c8843b916.png"></p>
 
 <p><strong>Figure 3: Win percentage distribution with maximum 10000 rounds</strong></p>
 
